@@ -3,7 +3,7 @@
 using namespace std;
 
 void processGrades(int *grades, int students, int subjects) {
-    int highest = *(grades); // first element
+    int highest = *(grades);
 
     cout << "\nGrade Matrix:\n";
 
@@ -47,7 +47,6 @@ int main() {
         }
     }
 
-    // pass the array as a pointer
     processGrades(&grades[0][0], students, subjects);
 
     return 0;
