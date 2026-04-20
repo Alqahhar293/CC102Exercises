@@ -28,7 +28,6 @@ int main() {
 
     ofstream copyFile("color_copy.txt");
 
-    // Check if copy file opened successfully
     if (!copyFile) {
         cout << "Error creating file color_copy.txt" << endl;
         inFile.close();
@@ -37,12 +36,10 @@ int main() {
 
     string line;
 
-    // Read from original file and write to copy file
     while (getline(inFile, line)) {
         copyFile << line << endl;
     }
 
-    // Close both files
     inFile.close();
     copyFile.close();
 
